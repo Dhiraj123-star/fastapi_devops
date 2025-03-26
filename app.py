@@ -10,7 +10,7 @@ task_id_counter: int = 1  # Counter to generate unique IDs
 # Root endpoint
 @app.get("/")
 def read_root():
-    return {"message": "Welcome to the FastAPI Task Manager!"}
+    return {"message": "Welcome to the FastAPI Task Manager with CI/CD!"}
 
 # Helper function to create a task with an auto-incremented ID
 def create_task(task: Dict) -> Dict:

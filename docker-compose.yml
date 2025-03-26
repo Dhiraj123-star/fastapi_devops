@@ -1,7 +1,8 @@
-version: "3.9"  # Specify Docker Compose version
+version: "3.9"
 
 services:
-  fastapi-app:  # Name of the service
-    image: dhiraj918106/fastapi-app:latest  # Pull from Docker Hub
+  fastapi-app:
+    image: dhiraj918106/fastapi-app:latest
+    pull_policy: always  # Always pull the latest image
     ports:
-      - "8000:8000"  # Map host port 8000 to container port 8000
+      - "8000:8000"
