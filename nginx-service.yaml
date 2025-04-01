@@ -4,7 +4,7 @@ metadata:
   name: fastapi-service
 spec:
   selector:
-    app: fastapi   # This should match the label of your FastAPI pods
+    app: fastapi-app   # This should match the label of your FastAPI pods
   ports:
     - protocol: TCP
       port: 8000     # This is the port NGINX will route to
